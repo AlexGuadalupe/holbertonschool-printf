@@ -16,11 +16,14 @@ while (*format != '\0')
 if (*format == '%')
 {
 format++;
+if (*format == '\0')
+break;
 printed_chars += print_parameters (*format, args);
 }
 else
 {
-printed_chars += putchar(*format);
+putchar(*format);
+printed_chars++;
 }
 format++;
 }
