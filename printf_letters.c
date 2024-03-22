@@ -7,14 +7,20 @@
  */
 int printf_letters(char *str)
 {
-	int count = 0;
+int count = 0;
 
-	while (*str)
-	{
-		putchar(*str);
-		str++;
-		count++;
-	}
-
-	return (count);
+while (*str)
+{
+if (*(str + 1) == '\0')
+{
+putchar(*str);
+break;
+}
+else
+{
+putchar(*str);
+str++;
+count++;
+}
+return (count +1);
 }
