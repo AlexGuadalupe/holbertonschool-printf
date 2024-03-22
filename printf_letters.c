@@ -11,16 +11,15 @@ int count = 0;
 
 while (*str)
 {
-if (*(str + 1) == '\0')
-{
-putchar(*str);
-break;
-}
-else
-{
 putchar(*str);
 str++;
 count++;
 }
-return (count +1);
+return (count);
+}
+
+int char_print(char car)
+{
+putchar(car);
+return (1);
 }

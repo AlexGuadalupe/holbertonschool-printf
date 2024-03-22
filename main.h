@@ -19,7 +19,6 @@ int process_decimal(va_list args);
 int manejar_entero_sin_signo(va_list args);
 int handle_format_specifier(va_list args, char specifier);
 int parse_format(const char *format, va_list args);
-
-
+int char_print(char car);
 
 #endif

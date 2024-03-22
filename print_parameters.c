@@ -13,7 +13,7 @@ unsigned int printed_chars = 0;
 switch (specifier)
 {
 case 'c':
-putchar(va_arg(args, int));
+char_print(va_arg(args, int));
 printed_chars++;
 break;
 case 's':
