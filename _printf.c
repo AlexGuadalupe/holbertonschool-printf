@@ -17,7 +17,7 @@ if (*format == '%')
 {
 format++;
 printed_chars++;
-printed_chars += print_parameters (*format, args);
+printed_chars += print_parameters(*format, args);
 }
 else
 {
